@@ -1,0 +1,137 @@
+.customer_enquiry_page {
+  height: 100dvh;
+  background-color: #ffff;
+}
+.user_contact_form_container {
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .user_form_information_container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .heading {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0px;
+      color: #212121;
+    }
+    .enquiry_note {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #666666;
+    }
+  }
+
+  .input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .input_label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0px;
+      color: #212121;
+    }
+
+    .input_field {
+      gap: 16px;
+      border-radius: 8px;
+      border-width: 1px;
+      padding: 12px 16px;
+      border: 1px solid #666666;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #9e9e9e;
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  .terms_and_policy {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #666666;
+
+    .terms_and_policy_links {
+      color: #7225f5;
+      cursor: pointer;
+    }
+  }
+}
+
+.form_success_page {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 24px;
+  gap: 64px;
+
+  .success_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .success_animation {
+      width: 240px;
+      height: 240px;
+    }
+
+    .success_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0px 24px;
+      gap: 16px;
+
+      h3,
+      p {
+        text-align: center;
+        vertical-align: middle;
+        letter-spacing: 0px;
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: #212121;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+      }
+    }
+  }
+}
+
+.input_error {
+  border-color: #dc464e;
+}
+
+.input_error_text {
+  color: #dc464e;
+  font-size: 12px;
+  margin-top: 4px;
+}

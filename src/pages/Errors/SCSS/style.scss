@@ -1,0 +1,40 @@
+.page_not_found {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f1ea;
+
+    img {
+        object-fit: fill;
+    }
+
+    .page_not_found_text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        color: #212121;
+    }
+
+    button {
+        width: 129px;
+        height: 48px;
+        padding-top: 14px;
+        padding-right: 20px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        gap: 10px;
+        border-radius: 8px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,325 @@
+.desk_top_default_banner {
+    height: 100dvh;
+    background-color: #e8e8e8;
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+
+    .sections {
+        min-width: 421px;
+        max-height: 896px;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // welcome section
+    .welcome_to_section {
+        width: 421px;
+        height: 263px;
+        min-height: 263px;
+        border-radius: 24px;
+        padding: 40px 32px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+        background-color: #ffff;
+
+        .welcome_block {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .welcome_to_txt {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: 0px;
+                color: #7225f5;
+            }
+        }
+
+        .best_platform_txt {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            color: #212121;
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+    // key points
+    .key_points_box {
+        width: 421px;
+        height: 608px;
+        min-height: 608px;
+        background-color: #ffffff;
+        border-radius: 24px;
+        padding-top: 56px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .key_points_marquee_container {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            background-color: transparent;
+
+            /* The gradient fade effect */
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 50px; /* Adjust for desired fade width */
+                height: 100%;
+                z-index: 2;
+            }
+
+            &::before {
+                left: 0;
+                background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+            }
+
+            &:after {
+                right: 0;
+                background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+            }
+
+            .key_points_typo {
+                color: #7225f5;
+                font-size: 18px;
+                line-height: 24px;
+                background-color: #ffffff;
+                margin: 5px 0px;
+            }
+        }
+
+        .key_points_img_container {
+            position: relative;
+            bottom: 0px;
+
+            img {
+                object-fit: cover;
+                position: relative;
+                z-index: 11;
+            }
+
+            .bottom_background_color {
+                height: 111px;
+                width: 100%;
+                position: absolute;
+                background-color: #f3c168;
+                z-index: 10;
+                bottom: 0px;
+            }
+        }
+    }
+
+    // cities section
+    .cities_box {
+        width: 421px;
+        height: 390px;
+        min-height: 390px;
+        background-color: #ffff;
+        border-radius: 24px;
+        padding-top: 24px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .cities_typo {
+            color: #7225f5;
+            padding-left: 24px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h3 {
+                margin: 0px;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 100%;
+                letter-spacing: -1px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: 0px;
+                margin: 0px;
+            }
+        }
+
+        .cities_img_container {
+            display: flex;
+            justify-content: right;
+            align-items: baseline;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+
+    // mobile view section
+    .nextride_phone_view {
+        width: 421px;
+        height: 482px;
+        min-height: 482px;
+        border-radius: 24px;
+        background-color: #ffff;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    // qr code scan section
+    .qr_code_and_explore {
+        width: 421px;
+        height: 896px;
+        min-height: 896px;
+        padding: 32px;
+        gap: 64px;
+        border-radius: 24px;
+        background-color: #ffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .explore_nextride_block {
+            width: 357px;
+            height: 196px;
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+
+            .explore_nextride_txt {
+                display: flex;
+                gap: 24px;
+
+                h2 {
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 100%;
+                    letter-spacing: 0px;
+                    margin: 0px;
+                    color: #212121;
+                }
+            }
+
+            .explore_nextride_btn {
+                height: 72px;
+                gap: 8px;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                font-weight: 600;
+                font-size: 24px !important;
+                line-height: 32px;
+                letter-spacing: 0px;
+                text-align: center;
+
+                .explore_arrow {
+                    position: absolute;
+                    right: 24px;
+                }
+            }
+        }
+
+        .or_block {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+
+            .or_txt {
+                width: 82px;
+                height: 63px;
+                gap: 8px;
+                border-radius: 24px;
+                padding: 16px 24px;
+                background-color: #f7f1ff;
+                color: #7225f5;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .scan_qr_code_section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+
+            p {
+                margin: 0px;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 100%;
+                letter-spacing: 0px;
+                text-align: center;
+                color: #212121;
+            }
+
+            .scan_this_qr_txt {
+                width: 176px;
+                border-radius: 12px;
+                padding: 12px 16px;
+                background-color: #fbe8c6;
+
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: 0px;
+                color: #7225f5;
+            }
+        }
+    }
+}
+
+// desktop view
+.desktopView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e5e5e5;
+    position: relative;
+
+    .exit_desktop_view {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+    }
+}
+
+.mobile-preview-container {
+    width: 400px;
+    height: 100vh;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

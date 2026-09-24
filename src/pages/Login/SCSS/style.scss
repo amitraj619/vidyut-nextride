@@ -1,0 +1,92 @@
+.login_container {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(245, 245, 245, 0.4), rgba(245, 245, 245, 0.4)),
+        url("../../../assets/images/background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .login_inner_container {
+        // width: 492px;
+        min-width: 40%;
+        // height: 494px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 16px;
+        padding: 40px;
+
+        .login_heading_container {
+            // background-color: pink;
+            border-bottom: 1px solid rgb(227, 227, 227);
+            // width: 100%;
+            padding-bottom: 10px;
+
+            .login_page_heading {
+                font-weight: 650;
+                font-size: 24px;
+                color: rgb(33, 33, 33);
+                margin-bottom: 5px;
+            }
+        }
+
+        .login_input_container {
+            margin-top: 20px;
+            .input-label {
+                font-size: 18px;
+                font-weight: 400;
+                color: rgb(33, 33, 33);
+            }
+
+            .email_input {
+                padding: 14px 20px;
+                border: 1px solid rgb(227, 227, 227);
+
+                &:focus {
+                    border: 1px solid #7225f5;
+                    box-shadow: none;
+                }
+            }
+
+            .otp_input {
+                min-width: 60px;
+                max-width: 88px !important;
+                height: 56px !important;
+                margin: auto;
+                border-radius: 12px;
+                border-color: #f5f5f5;
+                padding: 14px, 20px, 14px, 20px;
+                border: 1px solid #e3e3e3;
+
+                &:focus-visible {
+                    border: 1px solid #7225f5 !important;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.login_button {
+    height: 56px;
+    background: linear-gradient(rgb(146, 90, 241) 0%, rgb(114, 37, 245) 100%);
+    color: rgb(255, 255, 255) !important;
+    /* margin-top: 20px; */
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 575px) {
+    .login_container {
+        .login_inner_container {
+            width: 95%;
+            padding: 20px !important;
+
+            .login_input_container {
+                .otp_input {
+                    width: 60px !important;
+                }
+            }
+        }
+    }
+}

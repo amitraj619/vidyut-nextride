@@ -1,0 +1,419 @@
+{
+  "HOME": "Home",
+  "SELECT_LANGUAGE": "Select language",
+  "HERO": {
+    "BADGE": "INDIA'S #1 TRUSTED EV MARKETPLACE",
+    "TITLE_P1": "Switch to Electric,",
+    "TITLE_P2": "Earn More Every Day",
+    "DESCRIPTION": "Drive with total peace of mind using our 100% Checked Vehicles. Get on the road faster with Low EMI Available on all models, and stay running with our dedicated Post-Purchase Service Support.",
+    "CTA": "View Best Deals"
+  },
+  "BANNER": {
+    "TITLE_1": "Banner 1 for discovery and promotion",
+    "TITLE_2": "Banner 2 for discovery and promotion",
+    "TITLE_3": "Banner 3 for discovery and promotion"
+  },
+  "ACTIONS": {
+    "BUY": {
+      "TITLE": "Buy",
+      "SUB_TITLE": "used EV"
+    },
+    "SELL": {
+      "TITLE": "Sell",
+      "SUB_TITLE": "your EV"
+    }
+  },
+  "BUY_EV_BY_BRANDS": {
+    "TITLE": "Buy EVs by brands",
+    "MAHINDRA": "Mahindra",
+    "MONTRA": "Montra",
+    "EULER": "Euler",
+    "ALTI_GREEN": "Altigreen",
+    "PIAGGIO": "Piaggio"
+  },
+  "WHY_CHOOSE_NEXTRIDE": {
+    "TITLE": "Why choose Nextride?",
+    "QUALITY_CHECK": "100+ steps quality check",
+    "BATTERY_REPORT": "OEM certified battery report",
+    "WARRANTY": "Up to 3 years of warranty",
+    "INSPECTION": "Free EV inspection",
+    "RC_TRANSFER": "Free RC transfer and insurance",
+    "SUPPORT": "100% after sales support",
+    "BEST_PRICE": "Get best price for your EV",
+    "HASSLE_FREE_DOCUMENTATION": "Hassle free documentation"
+  },
+  "FIND_MY_EV": {
+    "QUIZ_DURATION": "1 min quiz",
+    "TITLE": "Find the perfect EV for you",
+    "DESCRIPTION": "Let us know just these {{count}} things",
+    "COMPUTER_DESCRIPTION": "Take our 2-minute lifestyle quiz to get personalized recommendations based on your commute, budget, and charging access.",
+    "BUTTON": "Find my EV",
+    "QUIZ": {
+      "TITLE": "Find my EV",
+      "QUESTION_COUNT": "Question {{current}} of {{total}}",
+      "QUESTIONS": {
+        "QUESTION_1": "What kind of EV you need?",
+        "QUESTION_2": "What is your budget?",
+        "QUESTION_3": "About how many KMs on the EV are you okay with?",
+        "OPTIONS": {
+          "CARGO": "Cargo",
+          "PASSENGER": "Passenger",
+          "BUDGET_1": "0 - 2 lakh",
+          "BUDGET_2": "2 - 3 lakh",
+          "BUDGET_3": "3 - 4 lakh",
+          "BUDGET_4": "4+ lakh",
+          "KMS_1": "0 - 25k",
+          "KMS_2": "25k - 50k",
+          "KMS_3": "50k - 75k",
+          "KMS_4": "75k+"
+        }
+      }
+    },
+    "PERFECT_EVS_FOR_YOU": "Perfect EV(s) for you:",
+    "NO_RESULTS": {
+      "MESSAGE": "Your current filters didn’t return any results. Want to adjust and try again?",
+      "RETAKE_QUIZ": "Retake quiz"
+    }
+  },
+  "COSTUMER_REVIEWS": {
+    "TITLE": "Trusted by India's EV Pioneers",
+    "SUBTITLE": "Real stories from the people driving India's electric revolution with Vidyut.",
+    "USER3": {
+      "NAME": "Ravikant",
+      "SUBTITLE": "Driver, Treo Plus Owner",
+      "REVIEW": "Second hand but first class vehicle. It was a very easy process actually.",
+      "HIGHLIGHT": "",
+      "RATINGS": 5
+    },
+
+    "USER2": {
+      "NAME": "Deepak",
+      "SUBTITLE": "EV Auto Driver",
+      "REVIEW": "It’s very good. I thought it will give trouble because it’s electronic, but nothing like that. It’s a really nice thing. No service also. I feel I saved around 2 to 2.5 lakh.",
+      "HIGHLIGHT": "",
+      "RATINGS": 5
+    },
+
+    "USER1": {
+      "NAME": "Kushal Pal Singh",
+      "SUBTITLE": "Nextride Second Hand EV Customer",
+      "REVIEW": "Knowing there is a structured resale path gives confidence to scale my fleet.",
+      "HIGHLIGHT": "",
+      "RATINGS": 5
+    }
+  },
+  "OUR_STORY": {
+    "TITLE": "Our story so far",
+    "VEHICLES_SOLD": {
+      "LABEL": "Vehicles sold",
+      "VALUE": "{{count}}+"
+    },
+    "INSPECTIONS": {
+      "LABEL": "Vehicle inspections",
+      "VALUE": "{{count}}+"
+    },
+    "CITIES": {
+      "LABEL": "We are in",
+      "VALUE": "{{count}}+ cities"
+    },
+    "RATING": {
+      "LABEL": "Customer rating",
+      "VALUE": "{{rating}}/5"
+    }
+  },
+  "CURATED_FOR_YOU": {
+    "TITLE": "Curated for you",
+    "BUYING_EV": {
+      "CATEGORY": "Buying EV",
+      "HEADING": "Own your dream EV, for less",
+      "CTA": "Buy used EV"
+    },
+    "SELLING_EV": {
+      "CATEGORY": "Selling EV",
+      "HEADING": "Sell your EV, move forward faster",
+      "CTA": "Sell EV"
+    },
+    "BLOGS": {
+      "CATEGORY": "Blogs",
+      "HEADING": "Drive electric, pay your way",
+      "CTA": "Learn more"
+    }
+  },
+  "FAQ_SECTION": {
+    "TITLE": "Frequently Asked Questions",
+    "LOAD_MORE": "Load more",
+    "BUY_QUESTIONS": [
+      {
+        "QUESTION": "What are the types of EVs Vidyut NextRide sells?",
+        "ANSWER": "We sell both cargo and passenger 3-wheeler EVs of different brands and models."
+      },
+      {
+        "QUESTION": "What are the brands and models Vidyut NextRide offers?",
+        "ANSWER": "We deal in all electric 3-wheeler brands and models including:\n- Mahindra Treo\n- Mahindra Treo Plus\n- Mahindra Zor Grand\n- Piaggio Ape E-City Fx\n- Piaggio Ape E-City Fx Max\n- E-XTRA\n- Piaggio Ape E-xtra Fx\n- Piaggio Ape E-xtra Fx Max\n- Euler HiLoad\n- AltiGreen\n- Greaves ePro\n- Greaves Eltra"
+      },
+      {
+        "QUESTION": "Where can I view the vehicles list?",
+        "ANSWER": "You can check the complete vehicles list from Vidyut NextRide website."
+      },
+      {
+        "QUESTION": "Can I take a test drive of the vehicle?",
+        "ANSWER": "Yes, you can visit our yard and take a test drive of the vehicle. Our team will be there to help you decide the right vehicle for you."
+      },
+      {
+        "QUESTION": "Where should I go to test drive the vehicle?",
+        "ANSWER": "You can book a test drive of the vehicle on our website and our team will contact you to guide you further."
+      },
+      {
+        "QUESTION": "Does Vidyut NextRide offer financing options?",
+        "ANSWER": "Absolutely, we provide financing options depending on the brand and model to ease your burden of owning used EV."
+      },
+      {
+        "QUESTION": "Are used EVs sold by Vidyut NextRide reliable?",
+        "ANSWER": "Yes, we check every vehicle thoroughly with 100+ quality checkpoints to make sure the vehicle is reliable. Additionally, our used EVs are recertified by manufacturers directly."
+      },
+      {
+        "QUESTION": "Will I get any warranty on the vehicle?",
+        "ANSWER": "Our vehicles come with warranty offered by manufacturers so you can be rest assured."
+      },
+      {
+        "QUESTION": "What about the after-sales service?",
+        "ANSWER": "We are there to help you at every step. In case of any vehicle issues, you can get in touch with us, and we will help you to resolve the issue."
+      }
+    ],
+    "SELL_QUESTIONS": [
+      {
+        "QUESTION": "What should I do to sell my EV?",
+        "ANSWER": "Submit a sell request on our website and our team will call to guide you through the next steps."
+      },
+      {
+        "QUESTION": "Does Vidyut NextRide provide home inspection?",
+        "ANSWER": "Yes, an inspection executive will visit your location at your convenient date & time."
+      },
+      {
+        "QUESTION": "Can I reschedule the inspection appointment?",
+        "ANSWER": "Yes, inform our team with new appointment details and we'll reschedule it."
+      },
+      {
+        "QUESTION": "Do I have to pay for a home inspection?",
+        "ANSWER": "No, home inspection is provided free of cost."
+      },
+      {
+        "QUESTION": "When will I get the quotation price for my EV?",
+        "ANSWER": "You'll receive the quotation after the inspection is complete."
+      },
+      {
+        "QUESTION": "What if I don't like the quoted price?",
+        "ANSWER": "While we offer the best market price, you can choose not to proceed with the deal."
+      },
+      {
+        "QUESTION": "When will I receive the payment after confirming the deal price?",
+        "ANSWER": "Payment will be transferred to your bank account within 4 hours after the vehicle reaches our yard."
+      },
+      {
+        "QUESTION": "Will you pick the vehicle from my location?",
+        "ANSWER": "Pick and drop service is available but charges apply based on actual."
+      },
+      {
+        "QUESTION": "What documents do I need to sell my EV?",
+        "ANSWER": "Required documents include: <br/>- Original RC <br/>- KYC <br/>- Valid insurance <br/>- Fitness certificate (if applicable) <br/>- Cancelled cheque <br/>- GST certificate (for business-registered vehicles)"
+      },
+      {
+        "QUESTION": "How long will it take to get the RC transfer done?",
+        "ANSWER": "The transfer timeline depends on buyer availability and RTO requirements, but it's handled as a priority."
+      }
+    ]
+  },
+  "FOOTER": {
+    "QUICK_LINKS_TITLE": "Quick links",
+    "ADDRESS": "2nd Floor, 2nd Building, Hustlehub Techpark, 27th Main Road End, HSR Layout Sector 1, Bangalore, Karnataka, India - 560102",
+    "QUICK_LINKS": {
+      "POLICIES": "Policies",
+      "BUY_EV": "Buy EV",
+      "SELL_EV": "Sell EV",
+      "PRIVACY_POLICY": "Privacy Policy",
+      "T&C": "Terms and Conditions"
+    },
+    "CONTACT_US_TITLE": "Contact us",
+    "HELP": {
+      "TITLE": "Need Help ?",
+      "CALL_NOW": "Call Us +91 709 000 1401",
+      "WHATSAPP": "WhatsApp Us"
+    }
+  },
+  "BUY_USED_EV": {
+    "PAGE_TITLE": "Buy used EV",
+    "HEADER": "Buy used EV with confidence",
+    "STEPS": {
+      "STEP_1": "Choose from many EVs",
+      "STEP_2": "Take a free test drive",
+      "STEP_3": "Pay by cash or loan",
+      "STEP_4": "Take your EV delivery"
+    }
+  },
+  "EVS_FOR_SALE": {
+    "PAGE_TITLE": "EVs for sale near you",
+    "VIEW_MORE_EVS": "View more EVs"
+  },
+  "SELL_EV_SECTION": {
+    "HEADER": "Sell your EV",
+    "TAGLINE": "Sell your EV at best price without hassle",
+    "STEPS": [
+      {
+        "TITLE": "Book a free vehicle inspection"
+      },
+      {
+        "TITLE": "Get offer price"
+      },
+      {
+        "TITLE": "Close the final offer"
+      },
+      {
+        "TITLE": "Payment directly in your account"
+      }
+    ],
+    "CTA_BUTTON": "Book free inspection"
+  },
+  "CUSTOMER_ENQUIRY": {
+    "BOOK_INSPECTION_TITLE": "Book inspection",
+    "BOOK_INSPECTION_HEADER": "Book free EV inspection",
+    "BOOK_INSPECTION_DESCRIPTION": "Share your details, and we'll call you to schedule your inspection",
+    "BOOK_TEST_RIDE_TITLE": "Book test ride",
+    "BOOK_TEST_RIDE_HEADER": "Book free test ride",
+    "BOOK_TEST_RIDE_DESCRIPTION": "Share your details, and we'll call you to book a test ride",
+    "FORM": {
+      "NAME_LABEL": "Your name",
+      "NAME_PLACEHOLDER": "Enter your full name",
+      "PHONE_LABEL": "Phone number",
+      "PHONE_PLACEHOLDER": "Enter phone number",
+      "BUTTON": "Request call back",
+      "TERMS_AGREEMENT": "By submitting, I agree to all <1>terms</1> and <3>privacy policy</3>.",
+      "SUCCESS": "Submitted successfully.",
+      "ERROR": "Something went wrong.",
+      "PHONE_INVALID": "Please enter a valid 10-digit mobile number"
+    },
+    "SUCCESS": {
+      "THANKS": "Thanks {{customer_name}}",
+      "BOOK_TEST_RIDE_MESSAGE": "We will contact you soon for your free test ride of {{oem}} {{model}}",
+      "BOOK_INSPECTION_MESSAGE": "We will contact you soon for your free vehicle inspection",
+      "GO_BACK": "Go back"
+    }
+  },
+  "VEHICLE_DETAILS": {
+    "TITLE": "Vehicle details",
+    "KM": "km",
+    "VIEW_INSPECTION_REPORT": "View inspection report",
+    "OUR_PRICE": "Our price",
+    "NEW_EV_PRICE": "New EV price",
+    "EMI_STARTS": "EMI starts",
+    "VIDYUTS_PRICE": "Vidyut's price",
+    "BOOK_TEST_RIDE": "Book test ride",
+    "VIDYUT_VERIFIED": "Vidyut Verified",
+    "BOOK_FREE_TEST_RIDE": "Book Free Test Ride",
+    "VIEW_DETAILS": "View Details",
+    "HR_CHARGE": "hr charge",
+    "EASY_EMI_FROM": "Easy EMI from",
+    "CHECK_AMOUNT": "Check Amount",
+    "HEAR_FROM_THE_EXPERT": "Hear from the expert",
+    "EXPERT_AUDIO_SUB": "Honest details about condition and price",
+    "CHARGER_AVAILABILITY": "Charger availability",
+    "DOWNPAYMENT_LOW_AS": "Downpayment as low as",
+    "MONTH": " month",
+    "KNOW_YOUR_EV": {
+      "TITLE": "Know your EV",
+      "REG_NO": "Reg. No.",
+      "REG_DATE": "Reg. Date",
+      "INSURANCE_VALIDITY": "Insurance validity",
+      "NO_OF_OWNERS": "No. of owners",
+      "RTO": "RTO",
+      "BATTERY_CAPACITY": "Battery capacity",
+      "BATTERY_CAPACITY_VALUE": "{{value}} kWh",
+      "TOP_SPEED": "Top speed",
+      "TOP_SPEED_VALUE": "{{value}} km/h",
+      "CHARGING_TIME": "Charging time",
+      "MANUFACTURE_YEAR": "Manufacture year"
+    },
+    "INSPECTION_REPORT": {
+      "TITLE": "Inspection report",
+      "IMPERFECT_PARTS": {
+        "TITLE": "Imperfect parts",
+        "DESC": "Minor cosmetic imperfections are not repaired as they do not affect performance, and reduces the cost of ownership"
+      },
+      "FIXED_PARTS": {
+        "TITLE": "Fixed parts",
+        "DESC": "Some parts have been repainted or repaired. However, we assure the car is non-accidental"
+      },
+      "PERFECT_CONDITION": {
+        "TITLE": "Perfect condition",
+        "DESC": "Thoroughly tested and ready for the road as per Vidyut’s quality checks"
+      }
+    },
+    "EMI_CALCULATOR": {
+      "TITLE": "EMI Calculator",
+      "EMI_STARTING_FROM": "EMI starting from",
+      "M": "m",
+      "PRINCIPAL_LOAN_AMOUNT": "Principal and loan amount",
+      "TOTAL_INTEREST_PAYABLE": "Total interest payable",
+      "TOTAL_AMOUNT_PAYABLE": "Total amount payable",
+      "INTEREST_RATE": "Interest rate",
+      "LOAN_AMOUNT": "Loan amount",
+      "DOWN_PAYMENT": "Down payment",
+      "LOAN_DURATION": "Loan duration",
+      "MONTHS": " months"
+    }
+  },
+  "VEHICLES_LISTING": {
+    "ALL_EVS": "All EVs",
+    "FILTERS": "Filters",
+    "SORT": "Sort",
+    "BRAND": "Brand",
+    "VEHICLE_TYPE": "Vehicle Type",
+    "PRICE": "Price",
+    "KMS_DRIVEN": "KMs driven",
+    "REG_YEAR": "Reg. year",
+    "PRICE_RANGE": "Price range",
+    "MIN": "Min",
+    "MAX": "Max",
+    "CLEAR_ALL": "Clear all",
+    "ALL_FILTERS": "All Filters",
+    "APPLY": "Apply",
+    "SEARCH_FILTERS": "Search filter",
+    "LOAD_MORE": "Load more",
+    "KM": "km",
+    "VEHICLES_NEAR_YOU": "Vehicles Near You",
+    "FILTERS_AND_SORT": "Filters & Sort",
+    "NO_RESULTS": {
+      "TITLE": "No Matches Found",
+      "MESSAGE": "We couldn't find any vehicles matching your current filters. Try removing some filters to broaden your search."
+    }
+  },
+  "LOCATION": {
+    "SELECT_CITY": "Select city",
+    "SEARCH_YOUR_CITY": "Search your city",
+    "USE_CURRENT_LOCATION": "Use current location",
+    "POPULAR_CITIES": "Popular cities",
+    "All_CITIES": "All cities",
+    "NO_CITY_FOUND": "City not found",
+    "NO_CITY_SUBTEXT": "Please check the spelling or search for a nearby city."
+  },
+  "FILTER_LABELS": {
+    "oem": "Brand",
+    "vehicleType": "Vehicle Type",
+    "targetSellingPrice": "Price",
+    "currentOdometer": "KMs driven",
+    "sortBy": "Sort",
+    "registrationYear": "Reg. year"
+  },
+  "COMING_SOON": {
+    "TITLE": "Coming soon",
+    "MESSAGE": "NextRide is not available yet in {{city}}",
+    "EXPLORE_NEXTRIDE_BUTTON": "Explore NextRide",
+    "IN_CITY": "in {{city}}"
+  },
+  "MODAL": {
+    "REQUIREMENT_TITLE": "What type of auto do you need?",
+    "CHOOSE_VEHICLE": "Choose your vehicle type",
+    "PASSENGER": "Passenger",
+    "CARGO": "Loader",
+    "SHOW_VEHICLES": "Show Vehicles"
+  }
+}

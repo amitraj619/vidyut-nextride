@@ -1,0 +1,454 @@
+.custom_filter_bottom_sheet {
+  .ant-drawer-header {
+    border-bottom: 1px solid #dedede;
+
+    .ant-drawer-header-title {
+      .ant-drawer-title {
+        text-align: center;
+      }
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.custom_tabs {
+  .ant-tabs-nav {
+    .ant-tabs-nav-wrap {
+      .ant-tabs-nav-list {
+        .ant-tabs-tab {
+          color: #212121;
+          margin-top: 0px;
+          padding: 16px 16px;
+          width: 136px;
+
+          &.ant-tabs-tab-active {
+            background: linear-gradient(
+              270deg,
+              rgba(151, 71, 255, 0) 0%,
+              rgba(151, 71, 255, 0.1) 100%
+            );
+            border-right: none;
+            .ant-tabs-tab-btn {
+              // background-color: pink;
+              color: #212121 !important;
+              text-shadow: none;
+            }
+          }
+
+          .ant-tabs-tab-btn {
+            &:hover {
+              color: #212121;
+            }
+            &:active {
+              color: #212121;
+            }
+          }
+        }
+
+        .ant-tabs-ink-bar {
+          background-color: #7225f5;
+          left: 0px;
+          width: 4px;
+        }
+      }
+    }
+  }
+
+  .ant-tabs-content-holder {
+    .ant-tabs-content {
+      .ant-tabs-tabpane {
+        padding-left: 0px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.custom_checkbox_button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range_filter_con {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .range_filter_range_com {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+
+    .range_range_label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #666666;
+      text-align: start;
+    }
+
+    .range_range_value {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #212121;
+      text-align: start;
+    }
+  }
+
+  .range_slider_filter_com {
+    height: 302px;
+    display: flex;
+    gap: 24px;
+    justify-content: left;
+    padding: 0px 16px 0px 16px;
+
+    .slider_label {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      div {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        color: #666666;
+        text-align: center;
+      }
+
+      span {
+        gap: 8px;
+        padding: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: #f7f1ff;
+        color: #7225f5;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+    }
+
+    .custom_range_slider {
+      margin: 0px;
+
+      .ant-slider-rail {
+        width: 4px;
+        border-radius: 99px;
+        background-color: #e8e8e8;
+      }
+
+      .ant-slider-track {
+        width: 4px;
+        background-color: #7225f5 !important;
+        border-radius: 99px;
+      }
+
+      .ant-slider-step {
+        width: 4px;
+        border-radius: 99px;
+      }
+
+      .ant-slider-handle {
+        left: 0px;
+        &::after {
+          height: 12px !important;
+          width: 12px !important;
+          background-color: #7225f5;
+          box-shadow: 0 0 0 2px #ffffff;
+        }
+
+        &:focus::after {
+          box-shadow: none !important;
+          outline: none !important;
+          left: 0px;
+        }
+
+        &:hover::after {
+          outline: none !important;
+          box-shadow: none !important;
+          left: 0px;
+        }
+      }
+    }
+  }
+}
+
+.custom_progress_slider {
+  margin: 0px;
+
+  .ant-slider-rail {
+    height: 8px;
+    border-radius: 99px;
+    background-color: #e8e8e8;
+  }
+
+  .ant-slider-track {
+    height: 8px;
+    background-color: #7225f5;
+    border-radius: 99px;
+  }
+
+  .ant-slider-step {
+    height: 8px;
+    border-radius: 99px;
+  }
+
+  .ant-slider-handle {
+    top: -2px;
+
+    &::after {
+      height: 20px !important;
+      width: 20px !important;
+      background-color: #7225f5;
+      box-shadow: 0 0 0 2px #ffffff;
+    }
+
+    &:focus::after {
+      outline: 6px solid rgba(114, 37, 245, 0.2) !important;
+    }
+  }
+}
+
+.ant-tooltip.ant-slider-tooltip {
+  gap: 8px;
+  padding: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #f7f1ff;
+  color: #7225f5;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  &.ant-tooltip-placement-right {
+  }
+
+  .ant-tooltip-arrow {
+    display: none;
+  }
+
+  .ant-tooltip-content {
+    background-color: transparent !important;
+
+    .ant-tooltip-inner {
+      background-color: transparent !important;
+      box-shadow: none;
+      padding: 0;
+      min-height: inherit;
+      color: #7225f5;
+    }
+  }
+}
+
+.multi_select_search {
+  border: 1px solid #c4c4c4;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 18px;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
+}
+
+.filter_tab_label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .applied_filter_dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 99px;
+    background-color: #7225f5;
+  }
+}
+
+@media (max-height: 700px) {
+  .selectable_value_list {
+    max-height: 350px;
+  }
+}
+
+@media (min-height: 700px) {
+  .selectable_value_list {
+    max-height: 61vh;
+  }
+}
+
+.price_filter_horizontal {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "DM Sans";
+
+  .price_filter_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .label {
+      font-size: 14px;
+      font-weight: 500;
+      color: #6b7280;
+    }
+
+    .value {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111827;
+    }
+  }
+
+  .slider_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .custom_range_slider.horizontal {
+      margin: 0 4px;
+
+      .ant-slider-track {
+        background: linear-gradient(90deg, #925af1 0%, #7225f5 100%) !important;
+      }
+
+      .ant-slider-handle {
+        border: 2px solid #7225f5 !important;
+        box-shadow: 0 0 0 2px #f1e9fe !important;
+      }
+
+      .ant-slider-rail {
+        background-color: #e5e7eb;
+      }
+    }
+
+    .slider_labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+  }
+}
+
+.odometer_filter {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "DM Sans";
+
+  &.horizontal {
+    .slider_wrapper {
+      width: 100%;
+    }
+  }
+
+  &.vertical {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .slider_wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .odometer_filter_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .label {
+      font-size: 14px;
+      font-weight: 500;
+      color: #6b7280;
+    }
+
+    .value {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111827;
+    }
+  }
+
+  .slider_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .custom_range_slider.horizontal {
+      margin: 0 4px;
+
+      .ant-slider-track {
+        background: linear-gradient(90deg, #925af1 0%, #7225f5 100%) !important;
+      }
+
+      .ant-slider-handle {
+        border: 2px solid #7225f5 !important;
+        box-shadow: 0 0 0 2px #f1e9fe !important;
+      }
+
+      .ant-slider-rail {
+        background-color: #e5e7eb;
+      }
+    }
+
+    .slider_labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .price_filter_horizontal,
+  .odometer_filter {
+    padding: 10px 12px;
+
+    .price_filter_header,
+    .odometer_filter_header {
+      .label {
+        font-size: 13px;
+      }
+      .value {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.slider_wrapper {
+  background: #faf7ff;
+  padding: 10px;
+  border-radius: 8px;
+}

@@ -1,0 +1,51 @@
+{
+  "name": "vidyut-nextride",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "antd": "^5.24.3",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "framer-motion": "^12.5.0",
+    "i18next": "^24.2.3",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-http-backend": "^3.0.2",
+    "idb": "^8.0.3",
+    "lodash.isequal": "^4.5.0",
+    "lottie-react": "^2.4.1",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^15.4.1",
+    "react-icons": "^5.5.0",
+    "react-otp-input": "^3.1.1",
+    "react-router-dom": "^7.3.0",
+    "react-simple-star-rating": "^5.1.7",
+    "react-spinners": "^0.15.0",
+    "react-zoom-pan-pinch": "^3.7.0",
+    "sass": "^1.85.1",
+    "sonner": "^2.0.1",
+    "uuid": "^11.1.0",
+    "vt-fe-core": "https://static.vidyuttech.com/libs/release/vt-fe-core-0.5.2-1ddd321.tar.gz"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "vite": "^6.2.0"
+  }
+}

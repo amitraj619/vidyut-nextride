@@ -1,0 +1,109 @@
+.quiz_page {
+  height: 100dvh;
+  background-color: #ffff;
+}
+
+.question_status_bar {
+  height: 36px;
+  display: flex;
+  gap: 6px;
+  padding: 16px;
+
+  .question_status {
+    width: 30%;
+    height: 4px;
+    border-radius: 8px;
+    background-color: #e8e8e8;
+
+    &.question_done {
+      background-color: #8e51f7;
+    }
+  }
+}
+
+.question_container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  top: 150px;
+  left: 16px;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+
+  .question_number {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #666666;
+  }
+
+  .quiz_question {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #212121;
+  }
+
+  .quiz_options_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    .question_option_card {
+      flex: 1;
+      min-width: 150px;
+
+      background-color: #f3f3f3;
+      color: #212121;
+      border-radius: 16px;
+      padding: 24px;
+      gap: 16px;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: center;
+      border: 2px solid transparent;
+      cursor: pointer;
+
+      img {
+        max-width: 100%;
+        height: 64px;
+        object-fit: contain;
+        flex-shrink: 0;
+      }
+
+      &.selected {
+        border: 2px solid #7225f5;
+      }
+    }
+  }
+}
+
+.quiz_heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: #212121;
+  padding: 16px 16px;
+}
+
+.vertical_quiz_vehicle_listing {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  align-items: center;
+}
