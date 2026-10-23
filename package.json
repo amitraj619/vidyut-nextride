@@ -1,0 +1,36 @@
+{
+  "name": "vidyut-nextride-automation",
+  "version": "1.0.0",
+  "description": "End-to-End Test Automation Framework for Vidyut NextRide using Playwright & TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui --ui-host=127.0.0.1 --ui-port=8080",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:home": "playwright test tests/home.spec.ts",
+    "test:listing": "playwright test tests/listing.spec.ts",
+    "test:details": "playwright test tests/details.spec.ts",
+    "test:quiz": "playwright test tests/quiz.spec.ts",
+    "test:sell": "playwright test tests/sell.spec.ts",
+    "chromatic": "chromatic --playwright"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "typescript",
+    "vidyut-nextride"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@chromatic-com/playwright": "^1.0.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.4",
+    "chromatic": "^18.13.3",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.7.3"
+  }
+}
