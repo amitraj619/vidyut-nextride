@@ -15,9 +15,9 @@ export class HomePage extends BasePage {
 
   constructor(page: Page) {
     super(page);
-    this.heroSection = page.locator('text=/Switch to Electric|इलेक्ट्रिक पर स्विच करें/i').first();
-    this.viewBestDealsBtn = page.locator('button').filter({ hasText: /View Best Deals|अच्छी डील देखें/i }).first();
-    this.findMyEvBtn = page.locator('button').filter({ hasText: /Find my EV|अपनी ईवी खोजें/i }).first();
+    this.heroSection = page.locator('.hero_section, [class*="hero" i], .banner_container').first();
+    this.viewBestDealsBtn = page.getByRole('button', { name: /View Best Deals|अच्छी डील देखें/i }).first();
+    this.findMyEvBtn = page.getByRole('button', { name: /Find my EV|अपनी ईवी खोजें/i }).first();
     this.brandLogos = page.locator('img[alt*="_logo"], img[alt*="logo"]');
     this.whyChooseSection = page.locator('text=/Why choose Nextride|NextRide को क्यों चुनें/i').first();
     this.customerReviewsSection = page.locator('text=/Trusted by India|EV Pioneers|कस्टमर रिव्यू|Real stories/i').first();

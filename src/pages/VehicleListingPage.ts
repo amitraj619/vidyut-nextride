@@ -16,7 +16,7 @@ export class VehicleListingPage extends BasePage {
   constructor(page: Page) {
     super(page);
     this.vehicleCards = page.locator('.vehicle_card_v2');
-    this.filterSidebar = page.locator('text=/Vehicle Type|Brand|Price range|KMs driven/i').first();
+    this.filterSidebar = page.getByRole('button', { name: /Filters & Sort|Filters|फ़िल्टर/i }).or(page.locator('text=/Vehicle Type|Brand|Price range|KMs driven/i')).first();
     this.clearAllBtn = page.getByRole('button', { name: /Clear all|सभी हटाएं/i }).first();
     this.applyFilterBtn = page.getByRole('button', { name: /Apply|लागू करें/i }).first();
     this.sortNewlyAdded = page.locator('text=/Newly added|हाल ही में जोड़ा गया/i').first();
@@ -52,14 +52,33 @@ export class VehicleListingPage extends BasePage {
 
   async filterByVehicleType(type: 'Cargo' | 'Passenger') {
     const filter = type === 'Cargo' ? this.cargoFilter : this.passengerFilter;
-    await filter.scrollIntoViewIfNeeded();
-    await filter.click();
-    await this.page.waitForTimeout(1000);
+    if (await filter.isVisible()) {
+      await filter.scrollIntoViewIfNeeded();
+      await filter.click();
+      await this.page.waitForTimeout(1000);
+    }
   }
 
   async sortByPriceLowToHigh() {
-    await this.sortPriceLowHigh.scrollIntoViewIfNeeded();
-    await this.sortPriceLowHigh.click();
+    const mobileFilterBtn = this.page.getByRole('button', { name: /Filters & Sort|Filters|फ़िल्टर/i }).first();
+    if (await mobileFilterBtn.isVisible()) {
+      await mobileFilterBtn.click();
+      const dialog = this.page.locator('[role="dialog"], .ant-drawer, .ant-modal').first();
+      await dialog.waitFor({ state: 'visible', timeout: 5000 });
+      const sortTab = dialog.getByRole('tab', { name: /Sort|सॉर्ट/i });
+      if (await sortTab.isVisible()) {
+        await sortTab.click();
+      }
+      const option = dialog.locator('label, span').filter({ hasText: /Price: low to high|कीमत: कम से ज्यादा/i }).first();
+      await option.click();
+      const applyBtn = dialog.getByRole('button', { name: /Apply|लागू करें/i }).first();
+      if (await applyBtn.isVisible()) {
+        await applyBtn.click();
+      }
+    } else {
+      await this.sortPriceLowHigh.scrollIntoViewIfNeeded();
+      await this.sortPriceLowHigh.click();
+    }
     await this.page.waitForTimeout(1000);
   }
 }

@@ -17,7 +17,7 @@ export class VehicleDetailPage extends BasePage {
     this.backButton = page.locator('button:has-text("←"), button[aria-label*="back"]').first();
     this.vehicleTitle = page.locator('h1, h2').first();
     this.vehiclePrice = page.locator('text=/₹/').first();
-    this.emiCalculatorSection = page.locator('text=/EMI/i').locator('visible=true').first();
+    this.emiCalculatorSection = page.locator('text=/EMI Calculator|ईएमआई कैलकुलेटर/i').first();
     this.bookTestRideBtn = page.getByRole('button', { name: /Book Test Ride|टेस्ट राइड बुक करें|बुक टेस्ट राइड/i }).first();
     this.viewInspectionReportBtn = page.getByRole('button', { name: /View Report|रिपोर्ट देखें|अमाउंट देखें/i }).first();
     this.specsContainer = page.getByText(/रजिस्ट्रेशन|Registration|KA02|DL|HR|Odometer|Battery/i).first();
