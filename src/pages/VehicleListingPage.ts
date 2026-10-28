@@ -27,8 +27,9 @@ export class VehicleListingPage extends BasePage {
     this.emptyState = page.locator('text=/No results found|कोई गाड़ी नहीं मिली/i').first();
   }
 
-  async navigate() {
-    await this.goto('/all-ev-vehicles');
+  async navigate(city = '') {
+    const path = city ? `/all-ev-vehicles?city=${encodeURIComponent(city)}` : '/all-ev-vehicles';
+    await this.goto(path);
   }
 
   async getVehicleCardsCount(): Promise<number> {

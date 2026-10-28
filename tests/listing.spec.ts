@@ -30,6 +30,7 @@ test.describe('Vidyut NextRide - Vehicle Listing Suite', () => {
   });
 
   test('TC_LIST_05: Verify city parameter is maintained in listing URL', async ({ page }) => {
+    await listingPage.navigate('Bengaluru');
     const url = page.url();
     expect(url).toMatch(/city=/);
   });
