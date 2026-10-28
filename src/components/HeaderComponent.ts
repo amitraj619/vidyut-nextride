@@ -26,6 +26,11 @@ export class HeaderComponent {
   }
 
   async openCitySelector() {
+    try {
+      await this.page.removeLocatorHandler(
+        this.page.locator('.ant-modal-content').filter({ hasText: /Select city|शहर चुनें/i })
+      );
+    } catch {}
     await this.cityButton.click();
     await expect(this.antModal).toBeVisible({ timeout: 5000 });
   }
