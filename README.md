@@ -104,6 +104,17 @@ npx playwright test
 npx chromatic --playwright -t <YOUR_CHROMATIC_PROJECT_TOKEN>
 ```
 
+### 🚀 CI/CD Automation with GitHub Actions
+Chromatic visual regression testing is automated on every push via `.github/workflows/chromatic.yml`:
+1. **Playwright Job:** Runs tests within Microsoft's Playwright container image to produce visual archives in `./test-results`.
+2. **Chromatic Job:** Downloads test archives and uploads snapshots using `chromaui/action@latest` with `playwright: true`.
+
+#### Required Secret Setup
+1. In your GitHub repository, go to **Settings** > **Secrets and variables** > **Actions**.
+2. Click **New repository secret**.
+3. Name: `CHROMATIC_PROJECT_TOKEN`
+4. Value: Paste your project token from Chromatic (found in Chromatic Project Settings > Manage).
+
 
 ## 📊 Viewing Test Reports
 After executing tests, view the interactive HTML report with step timelines and failure media:
