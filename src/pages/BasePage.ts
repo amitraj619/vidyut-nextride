@@ -31,11 +31,43 @@ export class BasePage {
         return origHas.apply(this, arguments as any);
       };
     }).catch(() => {});
+
+    // Safety net: dismiss initial location selection modal if it intercepts user interactions
+    try {
+      this.page.addLocatorHandler(
+        this.page.locator('.ant-modal-content').filter({ hasText: /Select city|शहर चुनें/i }),
+        async (overlay) => {
+          const bengaluru = overlay.getByText('Bengaluru', { exact: false }).first();
+          if (await bengaluru.isVisible()) {
+            await bengaluru.click();
+          } else {
+            const closeBtn = overlay.locator('.ant-modal-close, button[aria-label="Close"]').first();
+            if (await closeBtn.isVisible()) {
+              await closeBtn.click();
+            }
+          }
+        }
+      );
+    } catch {}
   }
 
   async goto(path = '/') {
     await this.page.goto(path);
+    await this.dismissCityModalIfPresent();
     await this.waitForPageLoad();
+  }
+
+  async dismissCityModalIfPresent() {
+    try {
+      const modal = this.page.locator('.ant-modal-content').filter({ hasText: /Select city|शहर चुनें/i });
+      if (await modal.isVisible({ timeout: 1500 })) {
+        const bengaluru = modal.getByText('Bengaluru', { exact: false }).first();
+        if (await bengaluru.isVisible()) {
+          await bengaluru.click();
+          await this.page.waitForTimeout(500);
+        }
+      }
+    } catch {}
   }
 
   async waitForPageLoad() {

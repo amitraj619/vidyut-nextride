@@ -13,7 +13,7 @@ export default defineConfig({
   },
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 1,
+  retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 2 : undefined,
   reporter: [
     ['list'],
@@ -27,6 +27,10 @@ export default defineConfig({
     actionTimeout: 15 * 1000,
     navigationTimeout: 30 * 1000,
     ignoreHTTPSErrors: true,
+    geolocation: { latitude: 12.9716, longitude: 77.5946 },
+    permissions: ['geolocation'],
+    locale: 'en-IN',
+    timezoneId: 'Asia/Kolkata',
   },
   projects: [
     {

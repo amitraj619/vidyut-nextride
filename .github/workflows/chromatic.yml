@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.64.1-noble
+      options: --ipc=host
     steps:
       - uses: actions/checkout@v7
         with:
@@ -36,6 +37,7 @@ jobs:
   chromatic:
     name: Run Chromatic
     needs: playwright
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
